@@ -1,0 +1,41 @@
+@mixin breakpoint($size) {
+    @media (min-width: $size) {
+        @content;
+    }
+}
+
+@mixin transition($args...) {
+    -webkit-transition: $args;
+    -moz-transition: $args;
+    -ms-transition: $args;
+    -o-transition: $args;
+    transition: $args;
+}
+
+@mixin defaultTransition() {
+    @include transition(all .2s ease);
+}
+
+@mixin borderRadius($size) {
+    -webkit-border-radius: $size;
+    -moz-border-radius: $size;
+    border-radius: $size;
+}
+
+@mixin boxShadow($top : 0, $left : .2rem, $blur : .4rem, $color: rgba($black, .15), $inset: false) {
+    @if $inset {
+        -webkit-box-shadow: inset $top $left $blur $color !important;
+        -moz-box-shadow: inset $top $left $blur $color !important;
+        box-shadow: inset $top $left $blur $color !important;
+    }
+
+    @else {
+        -webkit-box-shadow: $top $left $blur $color !important;
+        -moz-box-shadow: $top $left $blur $color !important;
+        box-shadow: $top $left $blur $color !important;
+    }
+}
+
+@mixin textShadow($color: rgba($black, .4)) {
+    text-shadow: 2px 2px 1px $color;
+}

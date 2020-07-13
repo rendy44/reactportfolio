@@ -1,0 +1,40 @@
+@import "../../assets/sass/MainUtil";
+
+.button {
+    display: inline-block;
+    border: 1px solid;
+    padding: .75rem 1.5rem;
+    border-color: rgba($black, .1);
+    color: $white;
+    font-size: 90%;
+    @include borderRadius(4px);
+
+    @each $type,
+    $color in $colors {
+        &.button-#{$type} {
+            color: $white;
+            background-color: lighten($color, 10%);
+        }
+    }
+
+    &:hover,
+    &:active,
+    &:focus {
+        @include boxShadow();
+        text-decoration: none;
+    }
+
+    &.button-transparent {
+        border-color: transparent;
+
+        &:hover,
+        &:active,
+        &:focus {
+            box-shadow: none !important;
+        }
+    }
+
+    // @include breakpoint(768px) {
+    //     padding: .5rem 1.2rem;
+    // }
+}
