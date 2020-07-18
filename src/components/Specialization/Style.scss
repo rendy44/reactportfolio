@@ -3,6 +3,7 @@
 .spec-items {
     display: flex;
     flex-direction: column;
+    justify-content: center;
 
     .spec-item {
         margin-bottom: 1.5rem;

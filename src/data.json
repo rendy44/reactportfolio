@@ -1,0 +1,54 @@
+{
+    "hero": {
+        "title": "Hi, I am Rendy,",
+        "lead": "... a WordPress Developer."
+    },
+    "about": {
+        "title": "Hi There!",
+        "lead": "I am a WordPress Developer based in Yogyakarta, Indonesia. I am passionate to write clean and efficient code but highly customizable."
+    },
+    "specialization": {
+        "title": "What I Do The Most",
+        "items": [
+            {
+                "title": "WPC Complience",
+                "desc": "By following WPCS we can expect most of what WordPress can offers.",
+                "icon": "list-check-2"
+            },
+            {
+                "title": "Customizable",
+                "desc": "By utilizing WordPress hooks, we can ease our development process.",
+                "icon": "user-settings-line"
+            },
+            {
+                "title": "Secure",
+                "desc": "Beautiful and cutting-edge website is worth nothing if it is not secure.",
+                "icon": "lock-2-line"
+            }
+        ]
+    },
+    "career": {
+        "title": "Experiences",
+        "lead": "I have started my career as a Software Engineer since 2013, and have been focusing in WordPress Development for more than 4 years",
+        "items": [
+            {
+                "title": "WordPress Developer",
+                "company": "SoftwareSeni",
+                "location": "Yogyakarta, Indonesia",
+                "url": "https://www.softwareseni.co.id/",
+                "logo": "https://www.softwareseni.co.id/wp-content/themes/ss-2018/assets/img/extra/softwareseni_logo.svg",
+                "start": "Feb 2019",
+                "end": "Now"
+            },
+            {
+                "title": "WordPress Developer",
+                "company": "Harnods",
+                "location": "Yogyakarta, Indonesia",
+                "url": "https://harnods.com/",
+                "logo": "https://harnods.com/wp-content/uploads/2018/09/harnods-logo.svg",
+                "start": "Apr 2016",
+                "end": "Feb 2019"
+            }
+        ]
+    }
+}

@@ -10,7 +10,7 @@ const SpecializationItem = (props) => {
                     <i className={iconCss} />
                 </div>
                 <h3 className='item-title'>{props.title}</h3>
-                <p>{props.description}</p>
+                <p>{props.desc}</p>
             </div>
         </>
     )
@@ -19,7 +19,7 @@ const SpecializationItem = (props) => {
 SpecializationItem.propTypes = {
     icon: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
-    description: PropTypes.string.isRequired,
+    desc: PropTypes.string.isRequired,
 }
 
 export default SpecializationItem;
