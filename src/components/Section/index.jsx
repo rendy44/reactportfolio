@@ -9,7 +9,7 @@ const Section = (props) => {
         columnCss = 'text-' + columnAlignment + ' ' + columnWidth;
     const maybeTitle = props.title ? <h2 className='section-title'>{props.title}</h2> : ''
     return (
-        <section className={sectionCss}>
+        <section id={props.id} className={sectionCss}>
             <div className="frow-container">
                 <div className="inner">
                     <div className='frow'>
@@ -25,6 +25,7 @@ const Section = (props) => {
 }
 
 Section.propTypes = {
+    id: PropTypes.string.isRequired,
     extraCss: PropTypes.string,
     isFull: PropTypes.bool.isRequired,
     alignment: PropTypes.string.isRequired,
