@@ -17,7 +17,7 @@
 
         &.button-outline-#{$type} {
             color: $color;
-            border-color: $color;
+            border: 2px solid $color;
         }
     }
 
