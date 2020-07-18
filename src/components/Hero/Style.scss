@@ -31,11 +31,12 @@ $header_sizes: (768:3rem, 992: 4rem);
     }
 
     h1 {
-        font-size: 2rem;
+        font-size: 3rem;
         font-weight: 600;
         color: $white;
         margin: 0 0 1.5rem;
         display: block;
+        @include fontWriting;
         @include textShadow();
 
         @each $size,
@@ -47,7 +48,8 @@ $header_sizes: (768:3rem, 992: 4rem);
     }
 
     p {
-        font-weight: 500;
+        font-size: 1.3rem;
+        font-weight: 400;
         margin: 0 0 3rem;
         color: $white;
         display: block;

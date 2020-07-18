@@ -6,7 +6,6 @@
     padding: .75rem 1.5rem;
     border-color: rgba($black, .1);
     color: $white;
-    font-size: 90%;
     @include borderRadius(4px);
 
     @each $type,
@@ -25,12 +24,13 @@
     }
 
     &.button-transparent {
-        border-color: transparent;
+        border-color: $white;
 
         &:hover,
         &:active,
         &:focus {
             box-shadow: none !important;
+            color: $white;
         }
     }
 

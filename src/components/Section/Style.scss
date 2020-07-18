@@ -1,5 +1,30 @@
 @import "../../assets/sass/MainUtil";
 
 .section {
-    padding: 2rem 0;
+    padding: 3rem 0;
+
+    h2.section-title {
+        font-weight: 400;
+        font-size: 1.75rem;
+        color: $main;
+        margin: 0 0 2.5rem
+    }
+
+    p {
+        font-size: 1.2rem;
+        line-height: 1.4;
+        margin: 0;
+    }
+
+    @include breakpoint(768px) {
+        padding: 5rem 0;
+
+        h2.section-title {
+            font-size: 2rem;
+        }
+
+        p {
+            font-size: 1.4rem;
+        }
+    }
 }

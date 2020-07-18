@@ -39,3 +39,11 @@
 @mixin textShadow($color: rgba($black, .4)) {
     text-shadow: 2px 2px 1px $color;
 }
+
+@mixin fontMain() {
+    font-family: 'Baloo 2', cursive;
+}
+
+@mixin fontWriting() {
+    font-family: 'Dancing Script', cursive;
+}

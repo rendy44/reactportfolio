@@ -24,7 +24,9 @@ class App extends React.Component {
       return (
         <>
           <Hero />
-          <Section />
+          <Section title={'Hi There!'} isFull={false} alignment={'center'}>
+            <p>I am a WordPress Developer based in Yogyakarta, Indonesia. I am passionate to write clean and efficient code but highly customizable.</p>
+          </Section>
         </>
       )
     }
@@ -38,13 +40,5 @@ class App extends React.Component {
     }, 1000)
   }
 }
-
-// function App() {
-//   return (
-//     <>
-//       <Hero />
-//     </>
-//   );
-// }
 
 export default App;
