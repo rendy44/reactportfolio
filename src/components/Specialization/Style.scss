@@ -12,6 +12,7 @@
         .icon {
             color: $main;
             font-size: 2.5rem;
+            @include defaultTransition;
 
             i {
                 line-height: 1;
@@ -29,6 +30,14 @@
 
         &:last-child {
             margin-bottom: 0;
+        }
+
+        &:hover,
+        &:active,
+        &:focus {
+            .icon {
+                @include zoom;
+            }
         }
     }
 
