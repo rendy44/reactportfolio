@@ -1,5 +1,5 @@
 import React from 'react';
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import './Style.scss';
 
 
@@ -10,5 +10,8 @@ const Button = (props) => {
     )
 }
 
-
+Button.propTypes = {
+    type: PropTypes.string.isRequired,
+    href: PropTypes.string
+}
 export default Button

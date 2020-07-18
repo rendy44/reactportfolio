@@ -14,6 +14,11 @@
             color: $white;
             background-color: lighten($color, 10%);
         }
+
+        &.button-outline-#{$type} {
+            color: $color;
+            border-color: $color;
+        }
     }
 
     &:hover,

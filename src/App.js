@@ -8,6 +8,7 @@ import Specialization from './components/Specialization';
 import './assets/sass/App.scss';
 import 'remixicon/fonts/remixicon.css'
 import Experience from './components/Experience';
+import Button from './components/Button';
 
 class App extends React.Component {
   constructor() {
@@ -38,6 +39,9 @@ class App extends React.Component {
 
           <Section title={this.state.specialization.title} isFull={false} alignment={'center'} extraCss={'bg-light'}>
             <Specialization items={this.state.specialization.items} />
+            <div className='cta'>
+              <Button href={'#contact'} type={'outline-main'}>Contact me</Button>
+            </div>
           </Section>
 
           <Section title={this.state.career.title} isFull={false} alignment={'center'}>
