@@ -20,7 +20,7 @@ function Hero() {
                             </div>
                         </div>
                     </div>
-                    <Nav />
+                    {/* <Nav /> */}
                 </div>
             </div>
         </div>
