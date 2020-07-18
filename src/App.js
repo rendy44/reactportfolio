@@ -64,9 +64,11 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    this.setState(
-      Object.assign(Data, { isLoading: false })
-    );
+    setTimeout(() => {
+      this.setState(
+        Object.assign(Data, { isLoading: false })
+      );
+    }, 750)
 
     const { title, desc } = Data.general;
     document.title = title + " | " + desc;
