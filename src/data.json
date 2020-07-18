@@ -1,4 +1,8 @@
 {
+    "general": {
+        "title": "Rendy",
+        "desc": "a WordPress Developer"
+    },
     "hero": {
         "title": "Hi, I am Rendy,",
         "lead": "... a WordPress Developer."

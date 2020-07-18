@@ -4,11 +4,11 @@ import ReactLoading from 'react-loading';
 import Hero from "./components/Hero";
 import Section from './components/Section';
 import Specialization from './components/Specialization';
-
-import './assets/sass/App.scss';
-import 'remixicon/fonts/remixicon.css'
 import Experience from './components/Experience';
 import Button from './components/Button';
+import Footer from './components/Footer';
+import './assets/sass/App.scss';
+import 'remixicon/fonts/remixicon.css'
 
 class App extends React.Component {
   constructor() {
@@ -48,17 +48,22 @@ class App extends React.Component {
             <p>{this.state.career.lead}</p>
             <Experience items={this.state.career.items} />
           </Section>
+
+          <Footer>
+            <p>&copy; 2020 {this.state.general.title} | {this.state.general.desc}</p>
+          </Footer>
         </>
       )
     }
   }
 
   componentDidMount() {
-    document.title = 'Rendy | a WordPress Developer'
-
     this.setState(
       Object.assign(Data, { isLoading: false })
     );
+
+    const { title, desc } = Data.general;
+    document.title = title + " | " + desc;
   }
 }
 

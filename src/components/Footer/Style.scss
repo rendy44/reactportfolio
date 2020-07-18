@@ -1,0 +1,8 @@
+@import '../../assets/sass/MainUtil';
+
+footer.footer {
+    background-color: lighten($black, 25%);
+    color: $white;
+    padding: 2rem 0;
+    text-align: center;
+}
