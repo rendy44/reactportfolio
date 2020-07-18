@@ -9,6 +9,7 @@ import Button from './components/Button';
 import Footer from './components/Footer';
 import './assets/sass/App.scss';
 import 'remixicon/fonts/remixicon.css'
+import Contact from './components/Contact';
 
 class App extends React.Component {
   constructor() {
@@ -47,6 +48,11 @@ class App extends React.Component {
           <Section id={'experiences'} title={this.state.career.title} isFull={false} alignment={'center'}>
             <p>{this.state.career.lead}</p>
             <Experience items={this.state.career.items} />
+          </Section>
+
+          <Section id={'contact'} title={this.state.contact.title} isFull={false} alignment={'center'}>
+            <p>{this.state.contact.lead}</p>
+            <Contact items={this.state.contact.items} />
           </Section>
 
           <Footer>
