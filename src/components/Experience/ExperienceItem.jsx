@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const ExperienceItem = (props) => {
     return (
@@ -7,7 +8,7 @@ const ExperienceItem = (props) => {
             <div className='exp-item'>
                 <div className='exp-logo'>
                     <a target='_blank' rel='noopener noreferrer' href={props.companyUrl}>
-                        <img src={props.companyLogo} alt='' />
+                        <LazyLoadImage alt='' src={props.companyLogo} />
                     </a>
                 </div>
                 <div className='exp-detail'>
