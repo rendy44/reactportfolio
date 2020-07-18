@@ -1,5 +1,6 @@
 import React from 'react';
 import './Style.scss';
+import ScrollToTop from 'react-scroll-to-top';
 
 const Footer = (props) => {
     return (
@@ -9,6 +10,7 @@ const Footer = (props) => {
                     <div className='inner'>
                         <div className='col-sm-2-3'>
                             {props.children}
+                            <ScrollToTop smooth color={'#188ba5'} />
                         </div>
                     </div>
                 </div>
