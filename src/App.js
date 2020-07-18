@@ -33,11 +33,11 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    setTimeout(() => {
-      this.setState({
-        isLoading: false
-      });
-    }, 1000)
+    document.title = 'Rendy | a WordPress Developer'
+
+    this.setState({
+      isLoading: false
+    });
   }
 }
 
