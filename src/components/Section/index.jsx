@@ -4,10 +4,10 @@ import './Style.scss';
 
 const Section = (props) => {
     const sectionCss = props.extraCss ? 'section ' + props.extraCss : 'section',
-        columnWidth = props.isFull ? 'col' : 'col-sm-3-4 col-md-2-3',
+        columnWidth = props.isFull ? 'col' : 'col-sm-6-7 col-md-2-3',
         columnAlignment = props.alignment ? props.alignment : 'left',
         columnCss = 'text-' + columnAlignment + ' ' + columnWidth;
-    const maybeTitle = props.title ? <h2 class='section-title'>{props.title}</h2> : ''
+    const maybeTitle = props.title ? <h2 className='section-title'>{props.title}</h2> : ''
     return (
         <section className={sectionCss}>
             <div className="frow-container">

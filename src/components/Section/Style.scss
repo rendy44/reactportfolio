@@ -11,7 +11,7 @@
     }
 
     p {
-        font-size: 1.2rem;
+        font-size: 1.15rem;
         line-height: 1.4;
         margin: 0;
     }
@@ -26,5 +26,9 @@
         p {
             font-size: 1.4rem;
         }
+    }
+
+    &.bg-light {
+        background-color: darken($white, 3%);
     }
 }

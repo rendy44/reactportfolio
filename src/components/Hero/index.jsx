@@ -1,5 +1,4 @@
 import React from "react";
-import Nav from "../Nav";
 import './Style.scss';
 import Button from "../Button";
 
@@ -9,7 +8,7 @@ function Hero() {
             <div className="frow-container">
                 <div className="inner">
                     <div className="frow">
-                        <div className="col-sm-3-4 col-md-2-3">
+                        <div className="col-sm-6-7 col-md-2-3">
                             <div className='content'>
                                 <h1>Hi, I am Rendy,</h1>
                                 <p>... a WordPress Developer.</p>
